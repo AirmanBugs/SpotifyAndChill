@@ -1,7 +1,7 @@
 package com.netcompany.spotifyandchill;
 
 
-import com.netcompany.spotifyandchill.businesslogic.ExcusePrinterLogic;
+import com.netcompany.spotifyandchill.businesslogic.ExcuseLogic;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,7 +12,7 @@ import java.io.PrintStream;
 
 import static org.hamcrest.CoreMatchers.containsString;
 
-public class ExcusePrinterLogicTests {
+public class ExcuseLogicTests {
 
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -36,7 +36,7 @@ public class ExcusePrinterLogicTests {
     public void testThatExcuseGetsTold() {
 
         // ARRANGE
-        ExcusePrinterLogic excusePrinter = new ExcusePrinterLogic();
+        ExcuseLogic excusePrinter = new ExcuseLogic();
 
         // ACT
         excusePrinter.printExcuseAboutHenrikNotCallingBackEvenThoughISaidIWasGoingTo();

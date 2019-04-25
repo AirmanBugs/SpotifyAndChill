@@ -3,7 +3,7 @@ package com.netcompany.spotifyandchill.businesslogic;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ExcusePrinterLogic {
+public class ExcuseLogic {
 
     private final String excuseMessage = "Forgot to call back even though i said i was going to. \n Sorry about that.";
     private final String positiveResponseToReplyOfExcuse = "I should have called you back, thanks. I'll call you tomorrow.";
